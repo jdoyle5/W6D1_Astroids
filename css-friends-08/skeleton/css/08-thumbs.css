@@ -1,0 +1,32 @@
+/* PHASE 8: Thumbs */
+.thumb {
+
+}
+
+.content-sidebar ul:last-child > li {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+  position: relative;
+}
+
+
+.content-sidebar ul:last-child > li:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.thumb:hover::before {
+  display: block;
+  position: absolute;
+  top: -8px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: attr(title);
+}
